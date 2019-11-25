@@ -6,7 +6,7 @@ import actions from '../redux/actions';
 const Layout = ({ children, title, isAuthenticated, deauthenticate }) => (
   <div>
     <Head>
-      <title>{ title }</title>
+      <title>React-test-pos</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
