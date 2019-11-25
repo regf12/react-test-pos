@@ -12,15 +12,14 @@ const Layout = ({ children, title, isAuthenticated, deauthenticate }) => (
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
     </Head>
     <div>
-      <h2 className="title is-2" >React-test-pos</h2>
+      <h3 className="title is-2" >React-test-pos</h3>
     </div>
     <div className="tabs is-centered">
       <ul>
         <Link href="/"><a>Home</a></Link>
         {!isAuthenticated && <Link href="/signin"><a>Login</a></Link>}
         {!isAuthenticated && <Link href="/signup"><a>Registro</a></Link>}
-        {/* {isAuthenticated && <li onClick={deauthenticate}><a>Cerrar sesion</a></li>}
-        <Link href="/whoami"><a>Who Am I</a></Link> */}
+        {isAuthenticated && <li onClick={deauthenticate}><a>Cerrar sesion</a></li>}
       </ul>
     </div>
 
