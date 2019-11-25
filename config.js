@@ -1,4 +1,4 @@
 module.exports = {
-  API: 'http://laravel-server.test/api',
-  /* API: 'http://localhost:8000', */
+  // API: 'http://laravel-server.test/api',
+  API: 'https://laravel-test-pos.herokuapp.com/api'
 };
