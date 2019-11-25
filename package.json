@@ -1,5 +1,5 @@
 {
-  "name": "next-jwt-authentication",
+  "name": "react-test-pos",
   "version": "1.0.0",
   "scripts": {
     "dev": "node server.js",
@@ -7,13 +7,16 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@material-ui/core": "^4.7.0",
     "axios": "^0.17.1",
+    "bootstrap": "^4.3.1",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "js-cookie": "^2.2.0",
     "next": "^7.0.2",
     "next-redux-wrapper": "^2.0.0",
     "react": "^16.8.0",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.8.0",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",

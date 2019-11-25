@@ -2,6 +2,8 @@ import { connect } from 'react-redux';
 import initialize from '../utils/initialize';
 import Layout from '../components/Layout';
 
+// import "bootstrap/dist/css/bootstrap.min.css";
+
 const Index = () => (
   <Layout title="Home">
     <h2 className="title is-2">Authentication with Next.js and JWT</h2>
