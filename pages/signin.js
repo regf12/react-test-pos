@@ -28,7 +28,7 @@ class Signin extends React.Component {
   render() {
     return (
       <Layout title="Sign In">
-        <h3 className="title is-3">Sign In</h3>
+        <h3 className="title is-3">Login</h3>
         <form
           onSubmit={this.handleSubmit.bind(this)}
           className="container"
@@ -70,7 +70,7 @@ class Signin extends React.Component {
           <div className="field">
             <p className="control has-text-centered">
               <button type="submit" className="button is-success">
-                Sign In
+                Login
               </button>
             </p>
           </div>
