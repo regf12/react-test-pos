@@ -5,19 +5,20 @@ import { API } from '../../config';
 import { setCookie, removeCookie } from '../../utils/cookie';
 
 // gets token from the api and stores it in the redux store and in cookie
-const authenticate = ({ email, password }, type) => {
-  if (type !== 'login' && type !== 'signup') {
+const authenticate = ({ email, password, name}, type) => {
+  if (type !== 'login' && type !== 'register') {
     throw new Error('Wrong API call!');
   }
   return (dispatch) => {
-    axios.post(`${API}/${type}`, { email, password })
+    axios.post(`${API}/${type}`, { email, password, name})
       .then((response) => {
         setCookie('token', response.data.meta.token);
         Router.push('/');
         dispatch({type: AUTHENTICATE, payload: response.data.meta.token});
       })
-      .catch((err) => {
-        throw new Error(err);
+      .catch((/*err*/) => {
+        alert('Error, datos incorrectos.');
+        /*throw new Error(err);*/
       });
   };
 };

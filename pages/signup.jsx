@@ -20,7 +20,7 @@ class Signup extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.authenticate(
-      { email: this.state.email, password: this.state.password },
+      { name: this.state.name, email: this.state.email, password: this.state.password },
       'register'
     );
   }
@@ -34,6 +34,24 @@ class Signup extends React.Component {
           className="container"
           style={{ width: '540px' }}
         >
+          <div className="field">
+            <p className="control has-icons-left has-icons-right">
+              <input
+                className="input"
+                type="text"
+                placeholder="Name"
+                required
+                value={this.state.name}
+                onChange={e => this.setState({ name: e.target.value })}
+              />
+              <span className="icon is-small is-left">
+                <i className="fas fa-envelope" />
+              </span>
+              <span className="icon is-small is-right">
+                <i className="fas fa-check" />
+              </span>
+            </p>
+          </div>
           <div className="field">
             <p className="control has-icons-left has-icons-right">
               <input
