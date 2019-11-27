@@ -21,7 +21,7 @@ class Signup extends React.Component {
     e.preventDefault();
     this.props.authenticate(
       { email: this.state.email, password: this.state.password },
-      'signup'
+      'register'
     );
   }
 

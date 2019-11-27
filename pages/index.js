@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 const Index = () => (
-  <Layout title="Home">
+  <Layout title="react-test-pos">
     <h2 className="title is-2">Bienvenido</h2>
     <p>
 
